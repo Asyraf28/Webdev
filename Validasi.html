@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validasi Login</title>
+  <script>
+    function validateForm() {
+      var username = document.forms["loginForm"]["username"].value;
+      var password = document.forms["loginForm"]["password"].value;
+
+      if (username == "") {
+        alert("Username harus diisi");
+        return false;
+      }
+
+      if (password == "") {
+        alert("Password harus diisi");
+        return false;
+      }
+
+      // Validasi tambahan sesuai kebutuhan
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h2>Form Login</h2>
+  <form name="loginForm" onsubmit="return validateForm()" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0; 
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #bbb;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #aaa;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-group label {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-group label:hover {
+    background-color: #ddd;
+}
+
+.btn-group label input[type=checkbox] {
+    display: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+#totalCost {
+    font-weight: bold;
+    padding: 10px;
+}
